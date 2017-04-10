@@ -1,0 +1,127 @@
+:root {
+  --splash-color: #75B9DF;
+}
+
+/*page*/
+.page {
+  background-image: url('../img/textures/crossword.png');
+  width: 100%;
+  margin: 0 auto;
+  min-height: calc(100vh);
+}
+.container {
+  width: 100%;
+}
+h1,h2,h3,h4,h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*sidebar*/
+.sidebar {
+  background: #303336;
+  color: white;
+  padding: 50px 10px 30px 10px;
+  min-height: calc(100vh);
+}
+.colorsplash {
+  background: var(--splash-color);
+  height: 104px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sidebar .headshot {
+  height: 160px;
+  width: 170px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.sidebar .current-posn {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.sidebar .current-posn h4 {
+  color: var(--splash-color);
+  font-size: 16px;
+}
+.sidebar .name h2 {
+  font-size: 36px;
+  margin-top: 30px;
+}
+.sidebar .title h4 {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.sidebar .connect {
+  margin-top: 50px;
+}
+
+/*sidebar links*/
+.connect-links .btn{
+  margin: 10px;
+  border: none;
+  width: 54%;
+}
+.connect-links a {
+  line-height: 22px; /*vertically align text with icon */
+}
+.connect-links .github {
+  background: #444;
+  color: white;
+}
+.connect-links .linkedin {
+  background: #007bb6;
+  color: white;
+}
+.connect-links .twitter {
+  background: #55acee;
+  color: white;
+}
+.connect-links .email {
+  background: #452EA5;
+  color: white;
+}
+.connect-links i {
+  font-size: 22px;
+}
+
+/*main content*/
+.main-content {
+  padding: 0px;
+}
+
+/*tab area*/
+.nav-tabs {
+  padding: 60px 0 0 0;
+  background: #eee;
+  border: none;
+}
+/*individual tabs*/
+.nav-tabs li {
+  border-radius: 0px;
+  font-size: 16px;
+}
+.nav-tabs li.active {
+  border-bottom: var(--splash-color) 3px solid;
+}
+.nav-tabs li.active a, 
+.nav-tabs li.active:hover a {
+  border: none;
+  background: #eee;
+  color: var(--splash-color);
+}
+.nav-tabs li a,
+.nav-tabs li:hover a {
+  border: none;
+  color: var(--splash-color);
+  background: #eee;
+}
+
+.tab-pane {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  padding: 50px;
+}
+
