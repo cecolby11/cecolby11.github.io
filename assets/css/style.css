@@ -1,127 +1,106 @@
-:root {
-  --splash-color: #75B9DF;
-}
-
-/*page*/
 .page {
-  background-image: url('../img/textures/crossword.png');
   width: 100%;
   margin: 0 auto;
   min-height: calc(100vh);
 }
-.container {
-  width: 100%;
-}
-h1,h2,h3,h4,h5 {
-  font-family: 'Roboto', sans-serif;
-}
-
-/*sidebar*/
-.sidebar {
-  background: #303336;
-  color: white;
-  padding: 50px 10px 30px 10px;
+.main-content{
   min-height: calc(100vh);
-}
-.colorsplash {
-  background: var(--splash-color);
-  height: 104px;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
-.sidebar .headshot {
-  height: 160px;
-  width: 170px;
-  border-radius: 4px;
+.headshot-col {
+  padding: 0;
+}
+.headshot-container {
+  width: 100%;
+  height: calc(100vh);
+  overflow: auto;
+}
+.headshot{
+  height: 100%;
+  max-width: 100%;
+  width: auto;
   object-fit: cover;
 }
-.sidebar .current-posn {
-  margin-top: 10px;
-  font-size: 15px;
+
+.connect{
+  margin-bottom: 15px;
 }
-.sidebar .current-posn h4 {
-  color: var(--splash-color);
-  font-size: 16px;
+.connect img {
+  height: 40px;
 }
-.sidebar .name h2 {
-  font-size: 36px;
-  margin-top: 30px;
+
+.about{
+  padding: 20% 5% 0 5%;
 }
-.sidebar .title h4 {
-  margin-top: 5px;
-  font-size: 16px;
+.about .name {
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Playfair Display', serif;
+  font-size: 54px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.about .title{
+  font-family: 'Arsenal', sans-serif;
+  text-align: center;
+  font-size: 20px;
   font-weight: 300;
+  margin-bottom: 20px;
 }
-.sidebar .connect {
-  margin-top: 50px;
+.about h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 400;
+} 
+.about p {
+  font-family: 'Heebo', sans-serif;
+  font-size: 15px;
+  color: #333;
 }
-
-/*sidebar links*/
-.connect-links .btn{
-  margin: 10px;
-  border: none;
-  width: 54%;
+.about .row {
+  padding: 5px 0 5px 0;
 }
-.connect-links a {
-  line-height: 22px; /*vertically align text with icon */
-}
-.connect-links .github {
-  background: #444;
-  color: white;
-}
-.connect-links .linkedin {
-  background: #007bb6;
-  color: white;
-}
-.connect-links .twitter {
-  background: #55acee;
-  color: white;
-}
-.connect-links .email {
-  background: #452EA5;
-  color: white;
-}
-.connect-links i {
-  font-size: 22px;
+.emphasize{
+  font-weight: 400;
+  color: purple;
 }
 
-/*main content*/
-.main-content {
-  padding: 0px;
+@media screen and (max-width: 990px) {
+  .headshot-container{
+    max-height: 400px;
+  }
+  .headshot {
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 30%;
+  }
+  .about {
+    padding-top: 50px;
+  }
 }
 
-/*tab area*/
-.nav-tabs {
-  padding: 60px 0 0 0;
-  background: #eee;
-  border: none;
-}
-/*individual tabs*/
-.nav-tabs li {
-  border-radius: 0px;
-  font-size: 16px;
-}
-.nav-tabs li.active {
-  border-bottom: var(--splash-color) 3px solid;
-}
-.nav-tabs li.active a, 
-.nav-tabs li.active:hover a {
-  border: none;
-  background: #eee;
-  color: var(--splash-color);
-}
-.nav-tabs li a,
-.nav-tabs li:hover a {
-  border: none;
-  color: var(--splash-color);
-  background: #eee;
+@media screen and (max-width: 768px) {
+  .headshot-container {
+    height: 250px;
+    width: 100%;
+  }
+  .headshot {
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+  }
 }
 
-.tab-pane {
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 16px;
-  padding: 50px;
+@media screen and (max-width: 640px) {
+  .about {
+    padding-top: 10px;
+  }
+  .about .name {
+    font-size: 42px;
+  }
+  .about .title {
+    font-size: 16px;
+  }
 }
-

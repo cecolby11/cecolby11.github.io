@@ -6,11 +6,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <!-- font awesome embed -->
-  <script src="https://use.fontawesome.com/243d3bc5e5.js"></script>
   <!-- google fonts -->
- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Titillium+Web" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Arsenal|Heebo" rel="stylesheet">
   <script
   src="https://code.jquery.com/jquery-2.2.4.js"
   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
@@ -22,74 +19,67 @@
 <body>
 <div class="page">
 
-  <div class="container page-container">
+  <div class="container main-content">
     <!-- main content row -->
     <div class="row">
-      <!-- sidebar col -->
-      <div class="sidebar text-center col-md-4">
-        <div class="colorsplash"></div>
-        <div class="row photo">
-          <div class="col-md-12">
-            <img class="headshot" src="assets/img/Colby_sl_crop.jpg">
-          </div>
+
+      <!-- photo col -->
+      <div class="col-sm-12 col-md-6 headshot-col">
+        <div class="headshot-container">
+          <img class="headshot" src="assets/img/Colby_sl.jpg">
         </div>
-        <div class="row name">
+      </div>
+
+      <!-- about col -->
+      <div class="col-sm-12 col-md-6">
+        <div class="row about">
           <div class="col-md-12">
-            <h2>Casey Colby</h2>
-          </div>
-        </div>
-        <div class="row title">
-          <div class="col-md-12">
-            <h4>Junior Web Developer</h4>
-          </div>
-        </div>
-        <div class="row current-posn">
-          <div class="col-md-12">
-            <h4>Current</h4>
-            <p>Child Language Development Lab</p>
-            <p>Northwestern University</p>
-          </div>
-        </div>
-        <div class="row connect">
-          <div class="col-md-12 class connect-links">
-            <a target="_blank" href="https://github.com/cecolby11" class="btn btn-default github"><i class="fa fa-github-alt pull-left" aria-hidden="true"></i>View apps on GitHub</a>
-            <a target="_blank" href="https://www.linkedin.com/in/caseycolby" class="btn btn-default linkedin"><i class="fa fa-linkedin pull-left" aria-hidden="true"></i>Connect on LinkedIn</a>
-            <a target="_blank" href="https://twitter.com/cecolby11" class="btn btn-default twitter"><i class="fa fa-twitter pull-left" aria-hidden="true"></i>Follow on Twitter</a>
-            <a target="_blank" href="mailto:casey.colby@northwestern.edu" class="btn btn-default email"><i class="fa fa-envelope-o pull-left" aria-hidden="true"></i>Send me an Email</a>
+            <h3 class="name">Casey Colby</h3>
+            <h4 class="title">Junior web developer with an affinity for linguistics</h4>
+
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <div class="connect">
+                  <a target="_blank" href="https://github.com/cecolby11" class="github"><img src="assets/img/icons/github.png"></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/caseycolby" class="linkedin"><img src="assets/img/icons/linkedin.png"></a>
+                  <a target="_blank" href="https://twitter.com/cecolby11" class="twitter"><img src="assets/img/icons/twitter.png"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class=row>
+              <div class="col-md-2">
+                <h4>@work</h4>
+              </div>
+              <div class="col-md-10">
+                 <p>Lab manager and software developer for Northwestern University&#39;s Child Language Development Lab, after receiving a B.A. in Economics and Linguistics from Northwestern University in 2015.</p>
+                 <p>Developing mobile applications to extend the Child Lab's experimental capabilities with children catalyzed her zeal for programming.</p>
+              </div>
+            </div>
+            
+            <div class=row>
+              <div class="col-md-2">
+                <h4>@school</h4>
+              </div>
+              <div class="col-md-10">
+                <p>Making the leap towards full time web development: Learning to learn and problem-solve in any language like a programmer, write good code, and develop web applications with JavaScript, HTML, CSS, and Node.js in <span class="emphasize">Northwestern University&#39;s full-stack coding bootcamp.</span></p>
+              </div>
+            </div>
+            
+            <div class=row>
+              <div class="col-md-2">
+                <h4>@home</h4>
+              </div>
+              <div class="col-md-10">
+                <p>As a jazz/latin pianist and drummer, Casey loves to make music and explore the Chicago Jazz Scene.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-      <!-- /.sidebar col -->
-      <!-- content col -->
-      <div class="col-md-8 main-content">
-        <div class="container main-content">
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#about" aria-controls="about" role="tab">About</a></li>
-            <li role="presentation"><a href="#portfolio" aria-controls="portfolio" role="tab">Portfolio</a></li>
-          </ul>
 
-          <div class="tab-content">
-            <!-- tab panel (bio)-->
-            <div class="tab-pane fade in active" id="about" role="tabpanel">
-              <h3>About</h3>
-              <p>Learning to write good code, learn/problem-solve in any language like a programmer, and develop web applications with JavaScript, HTML, CSS, and Node.js in Northwestern University&#39;s full-stack coding bootcamp.</p>
 
-              <p>Casey recieved her B.A. in Economics and Linguistics from Northwestern University in June 2015. She is the lab manager and software developer for Northwestern University&#39;s Child Language Development Lab, where she discovered her passion for web development and programming by virtue of developing mobile applications to extend the Child Lab's experimental capabilities with children.
-
-              <!-- <p>As a jazz/latin pianist and drummer, she also loves to make music and explore the Chicago Jazz Scene.</p> -->
-            </div>
-            <!-- /.tab panel (bio)-->
-            <div id="portfolio" class="tab-pane fade">
-              <h3>Portfolio</h3>
-              <p>Check back soon!</p>
-            </div>
-          </div>
-          <!-- /.tab-content -->
-        </div>
-        <!-- /.container -->
-
-      </div>
-      <!-- /.content col -->
     </div>
     <!-- /.main content row -->
   </div>
