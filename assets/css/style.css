@@ -1,4 +1,5 @@
 .page {
+  background: url('../img/textures/brillant.png');
   width: 100%;
   margin: 0 auto;
   min-height: calc(100vh);
@@ -30,7 +31,7 @@
 }
 
 .about{
-  padding: 20% 5% 10% 5%;
+  padding: 20% 5% 0 5%;
 }
 .about .name {
   text-align: center;
@@ -81,18 +82,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .headshot-container {
-    height: 250px;
-    width: 100%;
-  }
-  .headshot {
-    min-width: 100%;
-    width: auto;
-    height: 100%;
-  }
-}
-
 @media screen and (max-width: 640px) {
   .about {
     padding-top: 10px;
@@ -102,5 +91,17 @@
   }
   .about .title {
     font-size: 16px;
+  }
+  .headshot-container {
+    height: 250px;
+    width: 100%;
+  }
+  .headshot {
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+  }
+  .headshot-container {
+    height: 320px;
   }
 }
